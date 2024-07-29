@@ -1,9 +1,15 @@
-# Sanity Studio
+# The-RYIT-Backend 
+This is Sanity Backend for store Content
 
-Congratulations, you have now installed Sanity Studio, an open-source real-time content editing environment connected to the Sanity Content Lake backend.
+## Getting Started
+### Clone this Repo
+```
+ git clone https://github.com/SouZe-San/The-RYIT-Backend
+```
+### Hit the gear
+```
+cd  ./The-RYIT-Backend
+yarn add
+yarn run
 
-Now you can do the following things:
-
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+```
