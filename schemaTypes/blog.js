@@ -38,7 +38,7 @@ export const blog = defineType({
       title: 'Published at',
       type: 'date',
       options: {
-        dateFormat: 'YYYY-MM-DD',
+        dateFormat: 'MMM-DD-YYYY',
         calendarTodayLabel: 'Today',
       },
     }),
@@ -47,7 +47,23 @@ export const blog = defineType({
       title: 'Blog Content',
       description: 'Write your blog content here',
       type: 'array',
-      of: [{type: 'block'}],
+      of: [
+        {type: 'block'},
+        {
+          type: 'image',
+          fields: [
+            {
+              type: 'text',
+              name: 'alt',
+              title: 'Alternative text',
+              description: `Alternative text for screen readers.`,
+              options: {
+                isHighlighted: true,
+              },
+            },
+          ],
+        },
+      ],
     }),
   ],
 })
