@@ -18,6 +18,7 @@
     "@sanity/vision": "^3.52.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "ryit": "file:",
     "sanity": "^3.52.2",
     "styled-components": "^6.1.8"
   },

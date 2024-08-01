@@ -25,6 +25,11 @@ export const event = defineType({
       description: 'Please provide the date and time of the event',
       name: 'eventDate',
       type: 'datetime',
+      options: {
+        calendarTodayLabel: 'Today',
+        timeFormat: 'HH:mm',
+        dateFormat: 'YYYY-MM-DD',
+      },
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -47,7 +52,7 @@ export const event = defineType({
       type: 'text',
       validation: (Rule) =>
         Rule.required()
-          .max(600)
+          .max(1000)
           .error('Description should be less than 600 characters , Pls Summarize your thoughts'),
     }),
     defineField({
@@ -70,7 +75,7 @@ export const event = defineType({
       description: 'Please provide contact details of the organizer (phone number)',
       type: 'number',
       validation: (Rule) =>
-        Rule.required().min(10).max(10).error('A valid phone number should be in 10 digits'),
+        Rule.required().min(10).error('A valid phone number should be less than 10 digits'),
     }),
     defineField({
       name: 'eventShootImages',
